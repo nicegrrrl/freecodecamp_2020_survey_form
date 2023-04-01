@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <img
+      src="https://cdn-images-1.medium.com/max/1600/1*48NPMyIxLkahoIQiCW9ETA.png"
+      width="500"
+      alt="Grey's Anatomy"
+    />
+    <p id="description">
+      If you already caught up all the episodes, this survey form was made for
+      you.
+    </p>
+    <p class="subdescription">
+      Otherwise... get out of here! Unless you want to see some significant
+      spoilers.
+    </p>
+    <p class="subdescription">Ok then... you were warned!</p>
+
+    <div class="content">
+      <form id="survey-form">
+        <div class="about-you">
+          <h2 class="title">about you</h2>
+
+          <div class="field">
+            <label id="name-label" class="labels" required>Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="enter your name"
+              class="right-column-header"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label id="email-label" class="labels">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="enter your e-mail"
+              class="right-column-header"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label id="number-label" class="labels optional">Age</label>
+            <input
+              type="number"
+              id="number"
+              min="12"
+              max="99"
+              placeholder="enter your age"
+            />
+          </div>
+
+          <div id="dropdown" class="field">
+            <label class="labels optional">Gender</label>
+            <select>
+              <option disabled selected value="">pick one gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="your-opinion">
+          <h2 class="title">your opinion</h2>
+          <div class="field">
+            <label class="labels"
+              >Did you know that the episode's names are songs' names?
+            </label>
+            <ul>
+              <li>
+                <input type="radio" name="episode-name" value="yes" />Duh! Of
+                course I knew it!
+              </li>
+              <li>
+                <input type="radio" name="episode-name" value="no" />Seriously?
+                No, I had no idea!
+              </li>
+            </ul>
+          </div>
+
+          <div class="field">
+            <label class="labels"
+              >In general, which season did you like the most?
+            </label>
+            <select required>
+              <option disabled selected value="">pick one season</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+              <option value="5th">5th</option>
+              <option value="6th">6th</option>
+              <option value="7th">7th</option>
+              <option value="8th">8th</option>
+              <option value="9th">9th</option>
+              <option value="10th">10th</option>
+              <option value="11th">11th</option>
+              <option value="12th">12th</option>
+              <option value="13th">13th</option>
+              <option value="14th">14th</option>
+              <option value="15th">15th</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="labels"
+              >Which is/are your favorite(s) season finale(s)?
+            </label>
+            <ul>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="1st" />
+                <strong>S01E09</strong>: "Who's Zoomin' Who?"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="2nd" />
+                <strong>S02E27</strong>: "Losing My Religion"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="3rd" />
+                <strong>S03E25</strong>: "Didn't We Almost Have It All?"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="4th" />
+                <strong>S04E16E17</strong>: "Freedom"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="5th" />
+                <strong>S05E24</strong>: "Now or Never"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="6th" />
+                <strong>S06E24</strong>: "Death And All His Friends"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="7th" />
+                <strong>S07E22</strong>: "Unaccompanied Minor"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="8th" />
+                <strong>S08E24</strong>: "Flight"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="9th" />
+                <strong>S09E24</strong>: "Perfect Storm"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="10th" />
+                <strong>S10E24</strong>: "Fear (Of the Unknown)"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="11th" />
+                <strong>S11E25</strong>: "You're My Home"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="12th" />
+                <strong>S12E24</strong>: "Family Affair"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="13th" />
+                <strong>S13E24</strong>: "Ring of Fire"
+              </li>
+              <li>
+                <input type="checkbox" name="favorite-sf" value="14th" />
+                <strong>S14E24</strong>: "All of Me"
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="favorite-sf"
+                  value="15th"
+                  onclick="return false;"
+                  disabled="disabled"
+                />
+                <strong>S15E23</strong>: "What I Did for Love"
+              </li>
+            </ul>
+          </div>
+
+          <div class="field">
+            <label class="labels"
+              >Which is your favorite current character?
+            </label>
+            <select required>
+              <option disabled selected value="">
+                pick me, choose me, love me
+              </option>
+              <option value="meredith">Meredith Grey</option>
+              <option value="alex">Alex Karev</option>
+              <option value="miranda">Miranda Bailey</option>
+              <option value="richard">Richard Webber</option>
+              <option value="owen">Owen Hunt</option>
+              <option value="amelia">Amelia Shepard</option>
+              <option value="jackson">Jackson Avery</option>
+              <option value="jo">Jo Karev</option>
+              <option value="maggie">Maggie Pierce</option>
+              <option value="teddy">Teddy Altman</option>
+              <option value="andrew">Andrew DeLuca</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="labels">Which character do you miss the most?</label>
+            <select required>
+              <option disabled selected value="">
+                pick me, choose me, miss me
+              </option>
+              <option value="derek">Derek Shepard</option>
+              <option value="cristina">Cristina Yang</option>
+              <option value="izzie">Izzie Stevens</option>
+              <option value="george">George O'Malley</option>
+              <option value="preston">Preston Burke</option>
+              <option value="addison">Addison Montgomery</option>
+              <option value="callie">Callie Torres</option>
+              <option value="mark">Mark Sloan</option>
+              <option value="lexie">Lexie Grey</option>
+              <option value="arizona">Arizona Robbins</option>
+              <option value="april">April Kepner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="labels optional"
+              >If you could say something to the goddess Shonda Rhimes, what
+              would you say?
+            </label>
+
+            <textarea
+              placeholder="dreaming is free, right?"
+              id="hi-shonda"
+            ></textarea>
+          </div>
+        </div>
+
+        <button id="submit" type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <a href="https://twitter.com/nicegrrrl" target="_blank"
+        ><img src="https://bit.ly/2YiihMe" id="footer-assignature"
+      /></a>
+      © 2019
+    </footer>
+  </body>
+</html>
